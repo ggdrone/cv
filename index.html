@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tim Ackevald – CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tim Ackevald</h1>
+
+    <!-- Intro Section -->
+    <div class="intro">
+      <div class="intro-left">
+        <img src="me.jpg" alt="Profile Picture" />
+      </div>
+      <div class="intro-right">
+        <p>
+          <code>#include &lt;stdio.h&gt;</code><br />
+          <code>int main() {</code><br/>
+          <code>&nbsp;&nbsp;printf(<span style='color:var(--hlight-text);'>"Hello, world!\n"</span>);</code><br/><br/>
+          <code>&nbsp;&nbsp;printf(<span style='color:var(--hlight-text);'>"Detta är mitt hybrid-CV. Förutom att beskriva mina tidigare &nbsp;&nbsp;erfarenheter, ger det en kort inblick i vem jag är, mina intressen och min &nbsp;&nbsp;motivation till att studera systemutveckling."</span>);</code><br/>
+          <code>&nbsp;&nbsp;printf(<span style='color:var(--hlight-text);'>"Kort om mig: jag är 37 år och bor i Stockholm med min sambo och &nbsp;&nbsp;våran hund Momo. Jag motiveras av att lära mig nya saker samt förstå hur &nbsp;&nbsp;saker fungerar. På fritiden vill jag helst upptäcka något nytt eller utmana &nbsp;&nbsp;mig själv med problemlösningen på klätterväggen.\n"</span>);</code><br/><br/>
+          <code>&nbsp;&nbsp;return 0;</code><br/>
+          <code>}</code>
+        </p>
+      </div>
+    </div>
+
+    <!-- Timeline + Enso Circle + Right Wrapper Section -->
+    <div class="main-section">
+      <div class="left-column-wrapper">
+        <div class="timeline">
+          <h2>Tidigare erfarenheter och studier</h2>
+	  <h3>Studier</h3>
+          <ul class="timeline">
+            <li>2025 - Nu&nbsp;&nbsp; | Chas Acadamy</li>
+            <li>2024 - 2025 | C programmering och Linux</li>
+            <li>2024 - 2025 | Programmering 1 (C#)</li>
+	    <h3>Jobb</h3>
+            <li>2024 - Nu&nbsp;&nbsp; | Loyalty expert</li>
+            <li>2019 - 2024 | Strateg</li>
+            <li>2016 - 2019 | Enhetschef</li>
+          </ul>
+        </div>
+
+        <div class="enso-circle" aria-label="Enso circle - Zen brush stroke">
+          <pre>
+      -o$$$S$o-    
+   .o8888S88S8888b.  
+  ,d889^'     '^888L 
+ d88Y'           '988:
+:888'              888:
+!888.What we think :88! 
+:888.  we become   <3S  
+ 98Bb.            ^%   
+ '%888o._     _./&P     
+  `^%888%~  -~!^       
+     "^"~    
+
+&copy Tim Ackevald 2025
+         </pre>
+        </div>
+      </div>
+
+      <div class="right-wrapper">
+        <div class="motivation">
+          <h2>Varför systemutveckling?</h2>
+          <p>
+Jag motiveras starkt av att lösa problem och att hitta de mest optimala lösningarna. Att gå från att ha begränsad kunskap till att bemästra ett område och därmed kunna lösa liknande utmaningar på ett effektivare sätt är något jag finner mycket givande. Av just dessa anledningar ser jag mycket fram emot att fördjupa mina programmeringskunskaper och problemlösningsförmåga.
+          </p>
+          <ul class="motivation-links">
+	    <h3>Spännande arbetsplatser</h3>
+            <li><a href="https://teenage.engineering/">Teenage engineering</a></li>
+	    <li><a href="https://www.saab.com/sv/markets/sweden">SAAB</a></li>
+	    <li><a href="https://www.ericsson.com/en">Ericsson</a></li>
+	    <li><a href="https://new.abb.com/se">ABB</a></li>
+          </ul>
+        </div>
+
+        <div class="right-column">
+          <div class="skills">
+            <h2>Hobbys</h2>
+            <ul class="skills-list">
+              <li>Klättring</li>
+              <li>Teknik</li>
+              <li>Musik</li>
+              <li>Resa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Light mode toggle based on system preference -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      if (prefersLight) {
+        document.documentElement.classList.add('light-mode');
+      }
+
+      window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+        document.documentElement.classList.toggle('light-mode', e.matches);
+      });
+    });
+  </script>
+</body>
+</html>
